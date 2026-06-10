@@ -156,12 +156,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
                 ,
                 breakpoints: {
-                    // Mobile အတွက်
+                    // Mobile
                    390: {
                       slidesPerView: 1,
                         spaceBetween: 30
                    },
-                    // Tablet အတွက် (သင်လိုချင်တဲ့အပိုင်း)
+                    // Tablet
                     768: {
                         slidesPerView: 1,
                         spaceBetween: 30
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
                     
 
                     ,
-                    // Desktop အတွက်
+                    // Desktop
                     1200: {
                         slidesPerView: 3,
                         spaceBetween: 40
@@ -182,17 +182,17 @@ document.addEventListener('DOMContentLoaded', ()=> {
         );
 
 
-        // Footer Animation ကို ဒီလို ပြင်ရေးကြည့်ပါ
+        // Footer Animation
         gsap.to(".footer", {
                 y: 0,
                 opacity: 1,
-                visibility: "visible", // ပုန်းနေတဲ့ footer ကို ပေါ်လာအောင် လုပ်ပေးမယ်
+                visibility: "visible", 
 
                 duration: 1,
                 scrollTrigger: {
                     trigger: ".footer",
                     start: "top 95%",
-                    invalidateOnRefresh: true, // Page size ပြောင်းရင် ပြန်တွက်ပေးမယ်
+                    invalidateOnRefresh: true, // Page size 
                     toggleActions: "play none none none"
                 }
             }

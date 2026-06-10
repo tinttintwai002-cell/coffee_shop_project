@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 .sec-wrap {
-  max-width: 1200px;
-  margin-inline: auto;
   text-align: center;
   padding-block: 80px;
 }

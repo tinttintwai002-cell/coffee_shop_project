@@ -152,7 +152,7 @@ body {
   background: #fff;
 }
 
-/* Swiper slider ကို container ထဲမှာ အပြည့်ဝင်နေအောင် */
+/* Swiper slider */
 .ingredients-slider {
   width: 100%;
   padding-inline: 45px;
@@ -481,6 +481,8 @@ a {
 .sec-menu .menu-list-wrap {
   flex: 1;
   margin-bottom: 35px;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 .sec-menu .menu-group-ttl {
@@ -516,6 +518,7 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+ 
 }
 
 .sec-menu .menu-item-name {
@@ -525,7 +528,8 @@ a {
   line-height: 35px;
   color: var(--clr-secondary);
   padding-right: 6px;
-  white-space: nowrap;
+  white-space: normal;
+ 
 }
 
 .sec-menu .menu-item-line {
@@ -865,6 +869,9 @@ a {
 
   .sec-menu .menu-content {
     gap: 40px;
+    
+  }
+  .sec-menu .menu-content-wrap {
     padding: 0 20px;
   }
 
@@ -880,6 +887,7 @@ a {
     max-width: 400px;
     margin: 0 auto;
   }
+  
 
   .menu-list-wrap {
     max-width: 100%;
@@ -906,7 +914,7 @@ a {
 
   .sec-menu .menu-item-line {
     transform: translateY(2px);
-    min-width: 15px;
+    min-width: 10px;
   }
 
   .menu-action {
