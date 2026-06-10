@@ -157,12 +157,17 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 ,
                 breakpoints: {
                     // Mobile အတွက်
-
+                   390: {
+                      slidesPerView: 1,
+                        spaceBetween: 30
+                   },
                     // Tablet အတွက် (သင်လိုချင်တဲ့အပိုင်း)
                     768: {
                         slidesPerView: 1,
                         spaceBetween: 30
                     }
+                  
+                    
 
                     ,
                     // Desktop အတွက်
