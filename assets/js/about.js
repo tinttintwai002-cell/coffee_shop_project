@@ -1,21 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navLists = document.querySelector('.nav-lists');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLists.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-lists a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLists.classList.remove('active');
-        });
-    });
 
     const lenis = new Lenis({
-        duration: 1.2,       // Scroll အိမည့် အရှိန်နှုန်း
+        duration: 1.2, 
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         direction: 'vertical',
         smooth: true
@@ -28,13 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     gsap.ticker.lagSmoothing(0);
 
-    // const header = document.querySelector('.header');
 
-    // ScrollTrigger.create({
-    //     start: 'top top+=10',
-    //     onEnter: () => header.classList.add('scrolled'),
-    //     onLeaveBack: () => header.classList.remove('scrolled'),
-    // });
     const animatedElements = document.querySelectorAll('[data-anim="fade-up"], [data-anim="line-grow"]');
 
     if (animatedElements.length === 0) return;
