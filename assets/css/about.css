@@ -146,7 +146,6 @@
   background-repeat: repeat;
   width: 100%;
   height: auto;
-
 }
 
 .sec-history::before {
@@ -175,7 +174,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
 }
 
 .sec-history .history-timeline::before {
@@ -200,8 +198,6 @@
   position: relative;
   width: 100%;
   max-width: 600px;
-
-
 }
 
 .sec-history .item-left {
@@ -223,7 +219,6 @@
   margin-bottom: 20px;
   font-family: var(--font-primary);
   color: var(--clr-secondary);
-
 }
 
 .sec-history .timeline-sub-ttl {
@@ -256,6 +251,7 @@
 }
 /* Mobile View */
 @media(max-width: 768px) {
+
 
   .btn-order {
     width: 106px;
@@ -304,11 +300,9 @@
     margin-bottom: 40px;
   }
 
-
   .chef-heading-wrap .chef-desc {
     font-size: 14px;
   }
-
 
   .sec-chef .chef-name {
     font-size: 16px;
@@ -336,7 +330,6 @@
     border-left: 2px solid var(--clr-secondary);
     max-width: 100%;
     padding: 0;
-
   }
 
   .sec-history .timeline-item:last-child {
@@ -395,7 +388,6 @@
     text-align: left;
     padding: 0px 20px 0px 30px;
   }
-
 
   .sec-history .timeline-year {
     font-size: 28px;
