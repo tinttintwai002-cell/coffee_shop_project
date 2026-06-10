@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop - All We Need Is Coffee</title>
+    <meta name="description"
+      content="Coffee Shop website using HTML, CSS template and JavaScript animation.">
+    <meta name="keywords" content="HTML, Form element, Image Gallery, Map">
+    <meta property="og:title" content="Multi-Pages Coffee Shop Website">
+    <meta property="og:description"
+      content="HTML/CSS design structure with image gallery, forms, and map embed.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cgm-myanmar.com/">
+    <meta property="og:site_name" content="Coffee Shop Website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon"
+      href="assets/img/common/favicon-logo.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+    <!-- Libraries -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/top.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+  </head>
+
+  <body>
+    <!--header-->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <a href="top.html">
+            <img src="assets/img/common/img-common-logo.png"
+              alt="Coffee Shop Logo" width="100" height="70">
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-lists">
+          <li><a href="./top.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><button class="btn-order">Order Now !</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Hero Section-->
+      <section class="hero-section">
+        <div class="wrapper">
+          <div class="hero-content">
+            <h1>All We Need Is <span>Coffee</span></h1>
+            <p class="subttl">we source, roast and blend our coffee
+              with passion, we
+              select our tea with love...</p>
+            <div class="hero-btn-container">
+              <a href="#" class="btn-primary"
+                id="btn-scroll-to-message">Check Menu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-hero-img">
+          <img src="assets/img/top/img-top-hero-coffee.png"
+            alt="Hero Image"
+            class="hero-img">
+        </div>
+      </section>
+      <!-- Categories Section -->
+      <section class="sec-categories">
+        <div class="sec-wrap">
+          <div class="sec-header">
+            <span class="subtitle"
+              data-anim="fade-up">categories</span>
+            <h2 class="sec-ttl" data-anim="fade-up"
+              data-delay="0.1">FRESH TASTE EVERY DAY</h2>
+            <p data-anim="fade-up" data-delay="0.2">A charming
+              neighborhood restaurant and bar, located in the
+              heart of the city; a true gateway to gourmet
+              farm-to-table dining, inspired by seasonal produce
+              and the province's local suppliers.</p>
+          </div>
+          <div class="categories-grid">
+            <div class="categories-item" data-anim="fade-up"
+              data-delay="0.3">
+              <img src="assets/img/top/img-catego-coffee.png"
+                alt="Coffee" width="400" height="300"
+                loading="lazy">
+              <div
+                class="category-hover-info"><span>Coffee</span></div>
+            </div>
+            <div class="categories-item" data-anim="fade-up"
+              data-delay="0.4">
+              <img src="assets/img/top/img-catego-tea.png"
+                alt="Tea" width="400" height="300"
+                loading="lazy">
+              <div
+                class="category-hover-info"><span>Tea</span></div>
+            </div>
+            <div class="categories-item" data-anim="fade-up"
+              data-delay="0.5">
+              <img src="assets/img/top/img-catego-smoothie.png"
+                alt="Smoothie" width="400" height="300"
+                loading="lazy">
+              <div
+                class="category-hover-info"><span>Smoothie</span></div>
+            </div>
+            <div class="categories-item" data-anim="fade-up"
+              data-delay="0.6">
+              <img src="assets/img/top/img-catego-crossiant.png"
+                alt="Croissant" width="400" height="300"
+                loading="lazy">
+              <div
+                class="category-hover-info"><span>Croissant</span></div>
+            </div>
+            <div class="categories-item" data-anim="fade-up"
+              data-delay="0.7">
+              <img src="assets/img/top/img-catego-cake.png"
+                alt="Cake" width="400" height="300"
+                loading="lazy">
+              <div
+                class="category-hover-info"><span>Cake</span></div>
+            </div>
+            <div class="categories-item" data-anim="fade-up"
+              data-delay="0.8">
+              <img src="assets/img/top/img-catego-icecream.png"
+                alt="Ice Cream" width="400" height="300"
+                loading="lazy">
+              <div class="category-hover-info"><span>Ice
+                  Cream</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--menu-->
+      <section class="sec-menu">
+        <div class="sec-wrap">
+
+          <div class="menu-header">
+            <h2 class="sec-ttl">menu</h2>
+            <p class="menu-subttl">TASTE OUR FLAVOUR</p>
+          </div>
+          <div class="menu-content-wrap">
+            <div class="menu-content">
+              <div class="menu-group">
+                <div class="menu-img-wrap">
+                  <img
+                    src="assets/img/top/img-top-menu-drink.png"
+                    alt="A freshly brewed cup of coffee with chocolate shavings">
+                </div>
+                <div class="menu-list-wrap">
+                  <h3 class="menu-group-ttl">Drinks</h3>
+                  <ul class="menu-list">
+                    <li class="menu-item">
+                      <span class="menu-item-name">Matcha
+                        Latte</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">7500
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span class="menu-item-name">Jasmine
+                        Green Tea</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">8000
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span class="menu-item-name">Bang
+                        Bang Chocolate</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">6100
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span class="menu-item-name">Mango
+                        Tea with QQ Jelly</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">5500
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span class="menu-item-name">Iced
+                        Black Diamond Milk Tea</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">5500
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span class="menu-item-name">Regular
+                        Size Thai Pearl Milk Tea</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">9500
+                        MMK</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="menu-group menu-group-reverse">
+                <div class="menu-img-wrap">
+                  <img
+                    src="assets/img/top/img-top-menu-dessert.png"
+                    alt="An assortment of mini decorated dessert cakes and fresh strawberries"
+                    width="400" height="400"
+                    loading="lazy">
+                </div>
+                <div class="menu-list-wrap">
+                  <h3 class="menu-group-ttl">Desserts</h3>
+                  <ul class="menu-list">
+                    <li class="menu-item">
+                      <span
+                        class="menu-item-name">Croissant</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">4500
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span class="menu-item-name">Chiffon
+                        Cake</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">5500
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span class="menu-item-name">Marble
+                        Cookie</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">6500
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span
+                        class="menu-item-name">Chocolate
+                        Swiss Roll</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">9000
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span
+                        class="menu-item-name">Blueberry
+                        Cake Slice</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">3500
+                        MMK</span>
+                    </li>
+                    <li class="menu-item">
+                      <span
+                        class="menu-item-name">American
+                        Cheese Cake Slice</span>
+                      <span class="menu-item-line"></span>
+                      <span class="menu-item-price">8000
+                        MMK</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-action">
+              <a href="#" class="btn-primary">See More ...</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!--middle banner-->
+      <section class="sec-coffeebanner" id="sec-coffeebanner">
+        <div class="banner-container">
+          <div class="banner-wrap">
+            <div class="middle-banner">
+              <span class="banner-text text-left">Best
+                Delicious</span>
+              <div class="banner-img-container">
+                <img
+                  src="assets/img/top/img-top-middlebanner-coffeecup.png"
+                  alt="Coffee Cup">
+              </div>
+              <span class="banner-text text-right">Coffee
+                Bean</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Ingredient-->
+      <section class="ingredients">
+        <div class="sec-wrap">
+          <div class="section-header">
+            <span class="subtitle"
+              data-anim="fade-up">ingredients</span>
+            <h2 data-anim="fade-up" data-delay="0.1">MADE WITH
+              FRESH, ORGANIC INGREDIENTS</h2>
+          </div>
+
+          <div class="swiper ingredients-slider" data-anim="fade-up"
+            data-delay="0.2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ingredient-item">
+                <img
+                  src="assets/img/top/img-ingerdient-coffeebean.png"
+                  alt="Coffee">
+                <p>Coffee Beans</p>
+              </div>
+              <div class="swiper-slide ingredient-item">
+                <img
+                  src="assets/img/top/img-ingerdient-tealeave.png"
+                  alt="Tea">
+                <p>Tea Leaves</p>
+              </div>
+              <div class="swiper-slide ingredient-item">
+                <img
+                  src="assets/img/top/img-ingerdient-sugar.png"
+                  alt="Sugar">
+                <p>Sugar</p>
+              </div>
+              <div class="swiper-slide ingredient-item">
+                <img
+                  src="assets/img/top/img-ingerdient-milk.png"
+                  alt="Milk">
+                <p>Milk</p>
+              </div>
+              <div class="swiper-slide ingredient-item">
+                <img
+                  src="assets/img/top/img-ingerdient-chocolate.png"
+                  alt="Chocolate">
+                <p>Chocolate</p>
+              </div>
+              <div class="swiper-slide ingredient-item">
+                <img src="assets/img/top/img-ingerdient-egg.png"
+                  alt="Egg">
+                <p>Egg</p>
+              </div>
+            </div>
+
+            <button class="slider-btn prev">
+              <img src="assets/img/top/img-top-leftarrow.png"
+                alt="Previous"> </button>
+            <button class="slider-btn next">
+              <img src="assets/img/top/img-top-rightarrow.png"
+                alt="Next"> </button>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer" data-anim="fade-up" delay="0">
+      <div class="footer-wrap">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/img/top/img-top-logo.png"
+              alt="Coffee Shop Logo">
+          </div>
+          <p class="footer-slogan">TASTE OUR FLAVOUR</p>
+        </div>
+        <div class="footer-content">
+          <div class="footer-nav">
+            <ul class="nav-links">
+              <li><a href="./top.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <hr class="footer-divider">
+
+          <div class="footer-actions-row">
+            <form class="footer-newsletter"
+              onsubmit="event.preventDefault();">
+              <input type="email"
+                placeholder="Enter your email here"
+                class="newsletter-input" required>
+              <button type="submit"
+                class="newsletter-btn">Send</button>
+            </form>
+
+            <div class="footer-socials">
+              <a href="#" aria-label="Facebook"
+                class="social-icon">
+                <img
+                  src="assets/img/top/img-footer-facebook.png"
+                  alt="Facebook">
+              </a>
+              <a href="#" aria-label="Instagram"
+                class="social-icon">
+                <img
+                  src="assets/img/top/img-footer-instrgram.png"
+                  alt="Instagram">
+              </a>
+              <a href="#" aria-label="X" class="social-icon">
+                <img src="assets/img/top/img-footer-twitter.png"
+                  alt="Twitter">
+              </a>
+              <a href="#" aria-label="TikTok" class="social-icon">
+                <img src="assets/img/top/img-footer-tiktok.png"
+                  alt="TikTok">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Copyright@2026 All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="assets/js/top.js"></script>
+  </body>
+
+</html>

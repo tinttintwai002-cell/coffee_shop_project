@@ -165,8 +165,6 @@
 }
 
 .footer-wrap {
-  max-width: 1536px;
-  margin-inline: auto;
 
   
   display: flex;
@@ -384,7 +382,6 @@
   }
 
   .btn-order {
-    width: 106px;
     height: 31px;
     font-size: 14px;
     padding: 5px 10px;
