@@ -233,5 +233,4 @@ document.addEventListener('DOMContentLoaded', () => {
             animationPlayState: "running",
             ease: "back.out(1.2)"
         }, 0.5);
-}
-);
+});
