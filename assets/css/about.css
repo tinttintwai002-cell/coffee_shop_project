@@ -198,8 +198,6 @@
   position: relative;
   width: 100%;
   max-width: 600px;
-
-
 }
 
 .sec-history .item-left {
@@ -221,7 +219,6 @@
   margin-bottom: 20px;
   font-family: var(--font-primary);
   color: var(--clr-secondary);
-
 }
 
 .sec-history .timeline-sub-ttl {
@@ -334,7 +331,6 @@
     border-left: 2px solid var(--clr-secondary);
     max-width: 100%;
     padding: 0;
-
   }
 
   .sec-history .timeline-item:last-child {
@@ -366,8 +362,6 @@
   .sec-history .timeline-desc {
     font-size: 16px;
   }
-
-  
 }
 
 @media (min-width: 577px) and (max-width: 1023px) {
