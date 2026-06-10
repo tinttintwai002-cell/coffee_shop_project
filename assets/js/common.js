@@ -1,20 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const hamburger = document.querySelector('.hamburger');
     const navLists = document.querySelector('.nav-lists');
 
-    if (hamburger && navLists) {
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLists.classList.toggle('active');
-        });
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLists.classList.toggle('active');
+    });
 
-        document.querySelectorAll('.nav-lists a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLists.classList.remove('active');
-            });
+    document.querySelectorAll('.nav-lists a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLists.classList.remove('active');
         });
-    }
+    });
 
     const header = document.querySelector(".header");
 
