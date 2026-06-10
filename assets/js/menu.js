@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".footer",
-                start: "top 90%", // Footer အပေါ်နား Screen ထဲရောက်တာနဲ့ ပေါ်မယ်
+                start: "top 90%",
                 toggleActions: "play reverse play reset",
                 invalidateOnRefresh: true
             }

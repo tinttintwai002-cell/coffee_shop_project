@@ -10,11 +10,9 @@ a {
   font-family: var(--font-primary);
   font-size: 16px;
   font-weight: 400;
-  /* color: var(--clr-white); */
 }
 
 .touch-content {
-  /* touch-content for Get in touch & Send a Message Sections */
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -24,7 +22,6 @@ a {
 }
 
 .sec-ttl {
-  /*sec-ttl for Get in touch & Send a Message Sections */
   display: flex;
   width: fit-content;
   margin: 0 auto;
@@ -87,7 +84,6 @@ a {
   padding-inline: 166px;
   align-items: center;
   text-align: left;
-
 }
 
 .sec-touch .touch-card {
@@ -101,8 +97,6 @@ a {
   font-size: 35px;
   font-weight: 400;
   color: var(--clr-black);
-
-
 }
 
 .sec-touch .touch-card .touch-card-text {
@@ -125,18 +119,13 @@ a {
 .sec-touch .touch-map {
   border: 1px solid var(--clr-black);
   padding: 20px;
-
 }
 
 .sec-touch .touch-map .coffee-shop-map {
-
   width: 100%;
   display: block;
-  /* max-width: 360px; */
   height: 450px;
-
 }
-
 
 /* ================================ Section--> Our Community ============================= */
 
@@ -144,7 +133,6 @@ a {
   background-color: var(--dark-coffee);
   margin-block: 45px;
   padding-block: 25px;
-
 }
 
 .sec-community .community-text {
@@ -161,7 +149,6 @@ a {
   gap: 80px;
   position: relative;
   margin: 0 auto;
-
 }
 
 .sec-community .community-img-container {
@@ -193,7 +180,6 @@ a {
   border: 1px solid var(--clr-light-coffee);
   border-radius: 10px;
   box-sizing: border-box;
-
   font-family: var(--font-primary);
   font-size: 20px;
   font-weight: 400;
@@ -221,7 +207,6 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 80px 120px;
   margin-block-start: 80px;
-
 }
 
 .sec-connected .connected-grid a {
@@ -233,7 +218,6 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .sec-connected .connected-icon-wrap .connected-icon {
@@ -268,14 +252,15 @@ a {
   .sec-ttl {
     font-size: 25px;
   }
+
   .sec-ttl::before,
   .sec-ttl::after {
-  content: "";
-  border-bottom: 1px solid var(--clr-primary);
-  height: 1px;
-  width: 60px;
-  flex-shrink: 0;
-}
+    content: "";
+    border-bottom: 1px solid var(--clr-primary);
+    height: 1px;
+    width: 60px;
+    flex-shrink: 0;
+  }
 
   .touch-description,
   .message-description {
@@ -293,7 +278,6 @@ a {
     margin-block: 20px;
     gap: 40px;
     padding: 0px;
-
   }
 
   .sec-touch .coffee-shop-map {
@@ -334,7 +318,6 @@ a {
     justify-content: flex-start;
     gap: 10px;
     position: relative;
-
   }
 
   .sec-community .community-banner .community-text:first-of-type {
@@ -351,7 +334,6 @@ a {
     margin-top: -35px;
     margin-bottom: 20px;
     z-index: 10;
-
   }
 
   .sec-community .community-img-container img {
@@ -376,7 +358,6 @@ a {
   .sec-message .form-input,
   .sec-message .form-textarea {
     font-size: 16px;
-
   }
 
   /* ================================ Section--> Stay Connected ============================ */
@@ -477,7 +458,6 @@ a {
 .sec-touch .touch-map {
   animation-delay: 1.2s;
 }
-
 
 /* ===================== Our Community ================= */
 
@@ -621,19 +601,17 @@ a {
   transition: transform 0.3s ease;
 }
 
-/* ==========================================================
-MOBILE RESPONSIVE DESIGN
-#ERROR!*/
-
+/*MOBILE RESPONSIVE DESIGN
+*/
 @media (min-width: 768px) and (max-width: 992px) {
 
-/* Global Section Spacing */
-.sec-touch .touch-location-content,
-.sec-connected .connected-grid,
-.sec-message .form-grid {
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
+  /* Global Section Spacing */
+  .sec-touch .touch-location-content,
+  .sec-connected .connected-grid,
+  .sec-message .form-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 /* 4. Fine-tuning small phones (Optional) */
@@ -641,7 +619,6 @@ MOBILE RESPONSIVE DESIGN
   .sec-ttl {
     font-size: 28px;
   }
-
 }
 
 @media (max-width: 1024px) {

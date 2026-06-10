@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const lenis = new Lenis({
-        duration: 1.2, 
+        duration: 1.2,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         direction: 'vertical',
         smooth: true
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     gsap.ticker.lagSmoothing(0);
 
-
     const animatedElements = document.querySelectorAll('[data-anim="fade-up"], [data-anim="line-grow"]');
 
     if (animatedElements.length === 0) return;
@@ -26,11 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 const element = entry.target;
                 const delay = element.getAttribute('data-delay') || 0;
 
-
                 setTimeout(() => {
                     element.classList.add('is-animated');
                 }, delay);
-
 
                 animationObserver.unobserve(element);
             }

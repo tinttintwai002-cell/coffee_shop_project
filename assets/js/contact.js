@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 else if (entry.target.classList.contains('footer')) {
                     entry.target.classList.add('is-visible');
                 }
-                observer.unobserve(entry.target);   // unobserve --- want animation only one time
+                observer.unobserve(entry.target);
             }
         });
     }, { threshold: 0.2 });
@@ -35,5 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(target);
         }
     });
- 
+
 });

@@ -314,7 +314,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   max-width: 1200px;
-  background-image: url("/img/menu/coffee-bg-pattern.png");
+  background-image: url("/assets/img/menu/coffee-bg-pattern.png");
   border: 1px solid #8A5B4C;
   border-radius: 20px;
   padding: 40px;
@@ -562,13 +562,6 @@ header h1 {
     margin: 0 auto;
   }
 
-  /*.sec-top .sec-ttl::before,
-  .sec-top .sec-ttl::after,
-  .menu-sub::before,
-  .menu-sub::after {
-    display: none;
-  }*/
-
   .sec-top .sec-ttl::before,
   .sec-top .sec-ttl::after,
   .menu-sub::before,
@@ -591,11 +584,9 @@ header h1 {
     right: 8%;
   }
 
-
   .menu-sub::before {
     left: 2%;
   }
-
 
   .menu-sub::after {
     right: 2%;
