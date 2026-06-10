@@ -32,13 +32,13 @@
 
 /* ============================ Common Buttons & Text font Size ========================= */
 .common-btn {
-  display: inline-block;
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
   background-color: var(--dark-coffee);
   color: var(--clr-white);
+  font-size: 16px;
 }
 
 .common-btn:hover {
@@ -159,10 +159,10 @@
 
 .footer-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
-  padding-block: 80px;
-  padding-inline: calc((100vw - 1200px) / 2);
+  padding: 80px;
+  
 }
 
 .footer-brand {
@@ -171,6 +171,7 @@
   align-items: center;
   text-align: center;
   flex-shrink: 0;
+  margin-block: 10px;
 }
 
 .footer-logo img {

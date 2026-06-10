@@ -31,9 +31,9 @@
   </head>
 
   <body>
-    <!--header-->
+    <!--Header-->
     <header class="header">
-      <nav class="nav">
+      <div class="nav">
         <div class="logo">
           <a href="top.html">
             <img src="assets/img/common/img-common-logo.png"
@@ -52,30 +52,32 @@
           <li><a href="./contact.html">Contact</a></li>
           <li><button class="btn-order">Order Now !</button></li>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <main>
       <!--Hero Section-->
-
-    <section class="sec-hero" id="sec-hero">
-      <div class="hero-img-wrap">
-        <img src="assets/img/top/img-hero-coffeecup.png" alt="A Cap of Coffee" class="hero-img">
-      </div>
-      <div class="hero-sec-wrap">
-        <div class="hero-wrap">
-          <div class="hero-content">
-            <h1>All We Need<br>Is <span class="highlight">Coffee</span></h1>
-              <p class="hero-description">we source, roast and blend our coffee with passion, we select our tea with
-              love...</p>
-              <div class="hero-btn-container">
-              <a href="#" class="common-btn"
-                id="btn-scroll-to-message">Check Menu</a>
-            </div>
+      <section class="sec-hero" id="sec-hero">
+        <div class="hero-img-wrap">
+          <img src="assets/img/top/img-hero-coffeecup.png" alt="A Cap of Coffee"
+            class="hero-img">
         </div>
-      </div>
-    </div>
-</section>
+        <div class="hero-sec-wrap">
+          <div class="hero-wrap">
+            <div class="hero-content">
+              <h1>All We Need<br>Is <span class="highlight">Coffee</span></h1>
+              <p class="hero-description">we source, roast and blend our coffee
+                with passion, we select our tea with
+                love...</p>
+              <div class="hero-btn-container">
+                <a href="#" class="common-btn"
+                  id="btn-scroll-to-message">Check Menu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Categories Section -->
       <section class="sec-categories">
         <div class="sec-wrap">
@@ -143,7 +145,7 @@
         </div>
       </section>
 
-      <!--menu-->
+      <!--Menu Section-->
       <section class="sec-menu">
         <div class="sec-wrap">
 
@@ -273,9 +275,9 @@
               <a href="#" class="btn-primary">See More ...</a>
             </div>
           </div>
-
         </div>
       </section>
+
       <!--middle banner-->
       <section class="sec-coffeebanner" id="sec-coffeebanner">
         <div class="banner-container">
@@ -294,6 +296,7 @@
           </div>
         </div>
       </section>
+
       <!--Ingredient-->
       <section class="ingredients">
         <div class="sec-wrap">
@@ -359,9 +362,10 @@
     <footer class="footer" data-anim="fade-up" delay="0">
       <div class="footer-wrap">
         <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="assets/img/top/img-top-logo.png"
+          <div class="footer-logo"><a href="./top.html">
+            <img src="assets/img/about/img_footer_logo.png"
               alt="Coffee Shop Logo">
+            </a>
           </div>
           <p class="footer-slogan">TASTE OUR FLAVOUR</p>
         </div>
@@ -377,35 +381,26 @@
           <hr class="footer-divider">
 
           <div class="footer-actions-row">
-            <form class="footer-newsletter"
-              onsubmit="event.preventDefault();">
-              <input type="email"
-                placeholder="Enter your email here"
+            <form class="footer-newsletter" onsubmit="event.preventDefault();">
+              <input type="email" placeholder="Enter your email here"
                 class="newsletter-input" required>
-              <button type="submit"
-                class="newsletter-btn">Send</button>
+              <button type="submit" class="newsletter-btn">Send</button>
             </form>
 
             <div class="footer-socials">
-              <a href="#" aria-label="Facebook"
-                class="social-icon">
-                <img
-                  src="assets/img/top/img-footer-facebook.png"
-                  alt="Facebook">
+              <a href="#" aria-label="Facebook" class="social-icon">
+                <img src="assets/img/about/img_footer_fb.png" alt="Facebook">
               </a>
-              <a href="#" aria-label="Instagram"
-                class="social-icon">
-                <img
-                  src="assets/img/top/img-footer-instrgram.png"
+              <a href="#" aria-label="Instagram" class="social-icon">
+                <img src="assets/img/about/img_footer_insta.png"
                   alt="Instagram">
               </a>
               <a href="#" aria-label="X" class="social-icon">
-                <img src="assets/img/top/img-footer-twitter.png"
+                <img src="assets/img/about/img_footer_twitter.png"
                   alt="Twitter">
               </a>
               <a href="#" aria-label="TikTok" class="social-icon">
-                <img src="assets/img/top/img-footer-tiktok.png"
-                  alt="TikTok">
+                <img src="assets/img/about/img_footer_tiktok.png" alt="TikTok">
               </a>
             </div>
           </div>
@@ -416,6 +411,7 @@
         <p>Copyright@2026 All Rights Reserved</p>
       </div>
     </footer>
+
     <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -425,6 +421,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="assets/js/top.js"></script>
-  </body>
+    <script src="assets/js/common.js"></script>
 
+  </body>
 </html>
