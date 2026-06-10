@@ -1,27 +1,5 @@
 @charset "UTF-8";
 
-:root {
-  --font-primary: "Sora", sans-serif;
-  --font-seconday: "Spectral", serif;
-  --clr-primary: #c67c4e;
-  --base-color: #bf662f;
-  --dark-coffee: color-mix(in srgb, var(--base-color), #000000 60%);
-  --clr-secondary: #313131;
-  --clr-black: #000000;
-  --clr-white: #ffffff;
-  --clr-bg-soft-coffee: #f9f2ed;
-  --clr-bg-grey: #e3e3e3;
-  --clr-light-coffee: #c67c4e;
-  --clr-light-orange: #ffd8c0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 /* --- Categories Section --- */
 .sec-categories {
   padding: 80px 0;
