@@ -117,9 +117,9 @@
   aspect-ratio: 1 / 1;
   transition: transform 0.5s ease;
 }
-
 .sec-chef .chef-card:hover .chef-img {
   transform: scale(1.05);
+   opacity: 0.7;
 }
 
 .sec-chef .chef-name {
