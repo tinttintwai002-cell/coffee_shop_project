@@ -562,13 +562,6 @@ header h1 {
     margin: 0 auto;
   }
 
-  /*.sec-top .sec-ttl::before,
-  .sec-top .sec-ttl::after,
-  .menu-sub::before,
-  .menu-sub::after {
-    display: none;
-  }*/
-
   .sec-top .sec-ttl::before,
   .sec-top .sec-ttl::after,
   .menu-sub::before,
@@ -591,11 +584,9 @@ header h1 {
     right: 8%;
   }
 
-
   .menu-sub::before {
     left: 2%;
   }
-
 
   .menu-sub::after {
     right: 2%;

@@ -24,13 +24,12 @@
   margin-inline: auto;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
+
 /* ============================ Common Buttons & Text font Size ========================= */
 .common-btn {
   display: inline-block;
@@ -40,7 +39,6 @@
   text-align: center;
   background-color: var(--dark-coffee);
   color: var(--clr-white);
-
 }
 
 .common-btn:hover {
@@ -49,7 +47,6 @@
 }
 
 /* Header */
-
 .header {
   padding: 20px 70px;
   z-index: 2000;
@@ -141,14 +138,10 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-
-
 .body {
   margin: 0;
   padding: 0;
 }
-
-
 
 /* js */
 .footer {
@@ -168,8 +161,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 80px; 
-  padding-inline: calc((100vw - 1200px) / 2); 
+  padding-block: 80px;
+  padding-inline: calc((100vw - 1200px) / 2);
 }
 
 .footer-brand {
@@ -238,7 +231,6 @@
   overflow: hidden;
 }
 
-
 .newsletter-input {
   flex-grow: 1;
   background-color: var(--base-color);
@@ -304,11 +296,9 @@
   font-family: var(--font-primary);
 }
 
-
 @media(max-width: 768px) {
   .header {
     padding: 10px 20px;
-
   }
 
   .logo img {
@@ -348,8 +338,6 @@
     transition: height 0.3s ease-in-out;
     z-index: 990;
   }
-
-
 
   .nav-lists.active {
     height: auto;
@@ -394,15 +382,12 @@
     border: none;
   }
 
-
   .footer-wrap {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 40px;
     padding: 40px 20px;
-   
-   
   }
 
   .footer-content {
@@ -480,19 +465,18 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
-
   }
+
   .footer-newsletter {
     width: 100%;
     max-width: 100%;
   }
-
 
   .nav-links {
     gap: 25px;
   }
 
   .newsletter-input {
-    width: 200px; /* Constrain input width slightly */
+    width: 200px;
   }
 }

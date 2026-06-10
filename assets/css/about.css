@@ -144,7 +144,6 @@
   background-repeat: repeat;
   width: 100%;
   height: auto;
-
 }
 
 .sec-history::before {
@@ -173,7 +172,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
 }
 
 .sec-history .history-timeline::before {
@@ -251,7 +249,7 @@
 }
 
 @media(max-width: 768px) {
-  
+
   .btn-order {
     width: 106px;
     height: 31px;
@@ -268,7 +266,6 @@
     color: var(--dark-coffee);
     border: none;
   }
-
 
   .sec-ttl::before,
   .sec-ttl::after {
@@ -299,11 +296,9 @@
     margin-bottom: 40px;
   }
 
-
   .chef-heading-wrap .chef-desc {
     font-size: 14px;
   }
-
 
   .sec-chef .chef-name {
     font-size: 16px;
@@ -387,7 +382,6 @@
     text-align: left;
     padding: 0px 20px 0px 30px;
   }
-
 
   .sec-history .timeline-year {
     font-size: 28px;
