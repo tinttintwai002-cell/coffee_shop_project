@@ -661,19 +661,19 @@
   }
 
   .sec-top .sec-ttl::before {
-    left: 8%;
+    left: -5%;
   }
 
   .sec-top .sec-ttl::after {
-    right: 8%;
+    right: -5%;
   }
 
   .menu-sub::before {
-    left: 2%;
+    left: -5%;
   }
 
   .menu-sub::after {
-    right: 2%;
+    right: -5%;
   }
 
   .sec-top .sec-ttl,
