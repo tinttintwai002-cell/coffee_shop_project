@@ -465,9 +465,46 @@
   .item-price {
     font-size: 22px;
   }
-}
-
   
+  .card {
+    /*flex-direction: column;*/
+    text-align: center;
+    margin: 100px 30px;
+    padding: 40px 30px;
+  }
+
+  .card-image {
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
+
+  .card-image img {
+    /*width: 280px;
+    max-width: 100%;*/
+    height: auto;
+    margin-top: -60px;
+  }
+
+  .card-header,
+  .card-description {
+    text-align: center;
+  }
+
+  .card-header h2 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .card-header h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .card-description {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -524,55 +561,81 @@
     }
 
 
-   .card {
-  margin-block-start: 22px;
-  padding: 20px;
-  
+  .card {
+    display: block;
+    width: calc(100% - 32px);
+    margin: 40px auto;
+    padding: 24px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    opacity: 1;
+    visibility: visible;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
-.card-content {
-  
-  display: block;
-  position: relative;
-  text-align:  left;
-  overflow: hidden;
-}
-.card-image {
-  float: left;
-  display: block;
-    width: 120px;
-    height: auto;
-    margin-top: -50px;
-    margin-bottom: 116px;
-    position: relative;
+
+  .card-image {
+    float: left;                 
+    width: 35%;          
+    max-width: 120px;
+    margin-top: 0;         
+    margin-bottom: 10px;
+    margin-right: 15px;  
+    opacity: 1;
+    visibility: visible;
   }
 
-  /* .card-image img {
-    float: left;
-    width: 120px;
+  .card-image img {
+    width: 150%;
     height: auto;
-  } */
+    display: block;
+  }
 
+  .text-wrapper {
+    display: block; 
+    width: 100%; 
+    text-align: left;
+    opacity: 1;
+    visibility: visible;
+  }
 
+  .card-header {
+    display: block; 
+    text-align: right;
+  }
 
   .card-header h2 {
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0;
+    color: #8A5B4C;
   }
 
   .card-header h3 {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    color: #C67C4E;
   }
 
   .card-description {
-    font-size: 18px;
-    line-height: 28px;
+    display: block;
+    width: 100%;       
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 70px;
+    text-align: right;
+    margin: 0;
+    clear: none; 
   }
+  
 }
 
 @media screen and (max-width: 576px) {
-
-  .sec-top {
+    .sec-top {
     padding-top: 30px;
     padding-bottom: 50px;
   }
@@ -711,9 +774,7 @@
   .item-price {
     font-size: 22px;
   }
-}
 
-@media screen and (max-width: 576px) {
   .menu-content-wrapper {
     flex-direction: column;
     gap: 24px;
@@ -760,54 +821,4 @@
   .menu-footer-btn {
     margin-top: 50px;
   }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% - 32px);
-    margin: 60px auto;
-    padding: 20px 16px;
-    border-radius: 16px;
-    box-sizing: border-box;
-  }
-
-  .card-image {
-    margin-top: -50px;
-    margin-bottom: 12px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .card-image img {
-    width: 180px;
-    height: auto;
-  }
-
-  .text-wrapper {
-    width: 100%;
-    text-align: center;
-  }
-
-  .card-header h2 {
-    font-size: 28px;
-    line-height: 32px;
-  }
-
-  .card-header h3 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .card-description {
-    font-size: 14px;
-    line-height: 24px;
-    padding-top: 12px;
-  }
-
-  .card-header,
-  .card-description {
-    text-align: center;
-  }
-
 }
