@@ -128,6 +128,21 @@
   line-height: 25px;
 }
 
+/* Content အတွက် Padding */
+.sec-header {
+  padding: 40px 20px;
+}
+
+/* Image Container အတွက် Padding နဲ့ Image ကြားအကွာအဝေး */
+.categories-grid {
+  grid-template-columns: 1fr;
+  /* 1 ကော်လံဖြစ်သွားမယ် */
+  padding: 40px 35px;
+  /* သင်လိုချင်တဲ့ ပုံအတွက် padding */
+  gap: 20px;
+  /* ပုံတွေကြား အကွာအဝေး 20px */
+}
+
 a {
   text-decoration: none;
   font-family: var(--font-primary);
@@ -278,11 +293,12 @@ body {
   width: 100%;
 }
 
-.hero-content {
+.hero-section .hero-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  position: relative;
 }
 
 .hero-content h1 {
@@ -640,6 +656,7 @@ a {
     padding: 10px 20px;
   }
 
+
   .logo img {
     width: 50px;
     height: 35px;
@@ -659,6 +676,39 @@ a {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
+  }
+
+
+
+  /* Typography Hierarchy Setup */
+  .subtitle {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--clr-primary);
+    line-height: 45px;
+
+
+  }
+
+  .sec-ttl,
+  .section-header h2 {
+    font-family: var(--font-seconday);
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--clr-secondary);
+    line-height: 45px;
+
+  }
+
+  /* Category Section ထဲက p tag */
+  .sec-header p {
+    font-family: var(--font-primary);
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--clr-secondary);
+    line-height: 25px;
+
   }
 
   .nav-lists {
@@ -730,7 +780,7 @@ a {
     gap: 30px;
   }
 
-  .hero-section {
+  /* .hero-section {
     min-height: auto;
     flex-direction: column;
     text-align: center;
@@ -761,7 +811,7 @@ a {
     position: relative;
     width: 100%;
     height: auto;
-  }
+  } */
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -770,24 +820,24 @@ a {
     padding-block: 40px;
   }
 
-  .hero-content {
-    text-align: left;
-    gap: 20px;
-    padding: 20px 20px;
-  }
+  /* .hero-content {
+  text-align: left;
+  gap: 20px;
+  padding: 20px 20px;
+}
 
-  .hero-content h1 {
-    font-size: 50px;
-    line-height: 75px;
-  }
+.hero-content h1 {
+  font-size: 50px;
+  line-height: 75px;
+}
 
-  .sec-hero-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    padding-top: 20px;
-  }
+.sec-hero-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  padding-top: 20px;
+} */
 }
 
 /* Categories Mobile */
@@ -997,3 +1047,60 @@ a {
     padding: 20px 40px;
   }
 }
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .sec-hero-img {
+    position: relative;
+    /* Switch from absolute to relative to stack below text */
+    width: 100%;
+    height: 300px;
+    /* Fixed height for image area on mobile */
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+
+  .wrapper {
+    padding-block: 40px;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .sec-hero-img {
+    position: absolute;
+    right: 0;
+  }
+
+  .hero-img {
+    width: 100%;
+    inset: 0;
+  }
+
+  .hero-section .hero-content {
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-section {}
+} */

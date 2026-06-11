@@ -157,6 +157,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 ,
                 breakpoints: {
                     // Mobile အတွက်
+                   375: {
+                     slidesPerView: 1,
+                        spaceBetween: 30
+                    
+                   } ,
                    390: {
                       slidesPerView: 1,
                         spaceBetween: 30
