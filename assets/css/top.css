@@ -770,6 +770,101 @@ a {
   .ingredients-slider {
     padding: 20px 40px;
   }
+  
+  .banner-container {
+    padding: 0;
+  }
+  .sec-menu {
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+
+.sec-wrap .menu-header {
+  margin: 0px 80px;
+  
+}
+
+.sec-menu .sec-ttl {
+  font-size: 30px;
+  line-height: 30px;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.sec-menu .sec-ttl::before,
+.sec-menu .sec-ttl::after {
+  width: 80px;
+ 
+}
+
+.sec-menu .menu-subttl {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.menu-content-wrap {
+  gap: 20px;
+}
+
+/* Grid Layout content containers */
+.sec-menu .menu-content {
+
+  gap: 40px;
+}
+
+.sec-menu .menu-group {
+  gap: 30px;
+}
+
+/* Product Media Layout borders */
+
+.sec-menu .menu-img-wrap img {
+  width: 100%;
+  max-width:250px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Product Info Blocks */
+.sec-menu .menu-list-wrap {
+  padding-inline: 20px;
+}
+
+.sec-menu .menu-list {
+  gap: 30px;
+}
+
+/* Dotted Leader layout items */
+.sec-menu .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+
+.sec-menu .menu-item-name {
+  font-size: 20px;
+  line-height: 30px;
+  padding-right: 6px;
+ 
+}
+
+.sec-menu .menu-item-line {
+  
+  transform: translateY(4px);
+  opacity: 1;
+}
+
+.sec-menu .menu-item-price {
+  
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 6px;
+}
+
 }
 
 

@@ -4,9 +4,9 @@
 :root {
   /* Colors */
   --clr-primary: #C67C4E;
-  --base-color: #BF662F;
-  --dark-coffee: color-mix(in srgb, var(--base-color), #000000 60%);
   --clr-secondary: #313131;
+  --base-color: #BF662F;
+  --dark-coffee: color-mix(in srgb, var(--base-color), #000000 60%); 
   --clr-black: #000000;
   --clr-white: #FFFFFF;
   --clr-bg-soft-coffee: #f9f2ed;
