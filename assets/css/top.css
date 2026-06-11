@@ -631,8 +631,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
-  .sec-categories {
-    
+  .sec-categories {   
    padding: 40px 20px;
   }
 
