@@ -5,9 +5,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* =============================== Section --> Today Special =========================== */
+
+header h1 {
+  height: 114px;
+}
+
 .sec-top {
-  padding: 50px 80px 80px 80px;
+  padding-top: 50px;
+  padding-bottom: 80px;
   background-color: var(--clr-white);
   width: 100%;
 }
@@ -23,10 +28,10 @@
   font-size: 35px;
   font-weight: 800;
   text-align: center;
-  color: var(--clr-primary);
   text-transform: lowercase;
+  color: var(--clr-primary);
   position: relative;
-  /* margin-bottom: 80px; */
+  margin-bottom: 80px;
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
@@ -53,26 +58,18 @@
 }
 
 .sec-top .top-list {
-  margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* column-gap: 50px; */
-  gap: 120px;
+  column-gap: 50px;
   align-items: start;
 }
 
-.sec-top .pizza {
-  margin-block: 35px;
-}
-
 .sec-top .top-card {
-  max-width: 376px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   width: 100%;
-  /* height: 667px; */
-  /* justify-content: space-between; */
+  height: 667px;
+  justify-content: space-between;
 }
 
 .sec-top .card-img-wrap {
@@ -109,14 +106,12 @@
 }
 
 .sec-top .card-desc {
-  padding-block: 10px;
   font-family: var(--font-primary);
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   color: var(--clr-black);
   text-align: center;
-  
 }
 
 .sec-top .card-inverted .card-content {
@@ -126,8 +121,6 @@
 .sec-top .card-inverted .card-img-wrap {
   order: 2;
 }
-
-/* =============================== Section --> Menu =========================== */
 
 .menu-section {
   width: 100%;
@@ -201,7 +194,7 @@
   font-family: var(--font-primary);
   font-size: 20px;
   font-weight: 700;
-  color: var(--base-color);
+  color: #BF662F;
   cursor: pointer;
   position: relative;
   transition: color 0.3s ease;
@@ -227,14 +220,14 @@
 }
 
 .tab:focus-visible {
-  outline: 3px solid var(--clr-primary);
+  outline: 3px solid var(--clr-secondary, #C67C4E);
   outline-offset: 4px;
 }
 
 .menu-left-image {
   flex: 0 0 350px;
   background-color: transparent;
-  border: 1px solid var(--base-color);
+  border: 1px solid #BF662F;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -319,21 +312,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 168px 120px 168px ;
 }
 
 .card {
-  background-image: url("/assets/img/menu/coffee-bg-pattern.png");
-  max-width: 1200px;
-  margin-block-start: 57px;
   display: flex;
-  gap: 50px;
-  padding: 40px;
-  border: 1px solid var(--dark-coffee);
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  background-image: url("/assets/img/menu/coffee-bg-pattern.png");
+  border: 1px solid #8A5B4C;
   border-radius: 20px;
+  padding: 40px;
+  margin: 150px;
   opacity: 0;
   visibility: hidden;
-  
 }
 
 .card-header {
@@ -343,7 +335,7 @@
 .card-header h2 {
   font-size: 60px;
   font-weight: 700;
-  color: var(--dark-coffee);
+  color: #8A5B4C;
   font-family: var(--font-primary);
   line-height: 65px;
 }
@@ -351,40 +343,32 @@
 .card-header h3 {
   font-size: 35px;
   font-weight: 700;
-  color: var( --clr-light-coffee);
+  color: #C67C4E;
   font-family: var(--font-primary);
   line-height: 45px;
 }
 
 .card-description {
-  max-width: 754px;
   font-size: 30px;
   font-weight: 300;
   color: var(--clr-black);
   font-family: var(--font-primary);
-  /* margin: 0; */
+  margin: 0;
   line-height: 40px;
   text-align: right;
   padding-top: 20px;
-  
+}
+
+.card-image {
+  margin-top: -110px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .text-wrapper {
   opacity: 0;
   visibility: hidden;
-  gap: 20px;
-}  
-
-  .card-image {
-    margin-top: -100px;
-    margin-bottom: 30px;
-  }
-
-  .card-image img {
-    max-width: 317px;
-    height: auto;
-  }
-
+}
 
 /* Laptop */
 @media screen and (max-width: 1200px) {
@@ -556,11 +540,6 @@
     gap: 28px;
   }
 
-    .coffee-ads-section {
-      padding: 40px 20px;
-    }
-
-
   .card {
     display: block;
     width: calc(100% - 32px);
@@ -661,19 +640,19 @@
   }
 
   .sec-top .sec-ttl::before {
-    left: -5%;
+    left: 5%;
   }
 
   .sec-top .sec-ttl::after {
-    right: -5%;
+    right: 5%;
   }
 
   .menu-sub::before {
-    left: -5%;
+    left: 2%;
   }
 
   .menu-sub::after {
-    right: -5%;
+    right: 2%;
   }
 
   .sec-top .sec-ttl,
