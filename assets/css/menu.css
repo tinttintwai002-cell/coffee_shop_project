@@ -10,6 +10,7 @@ header h1 {
   height: 114px;
 }
 
+/* ================================ <!-- Today Special Section --> ==================== */
 .sec-top {
   padding-top: 50px;
   padding-bottom: 80px;
@@ -99,7 +100,7 @@ header h1 {
   font-size: 35px;
   font-weight: 700;
   color: var(--clr-black);
-  line-height: 45px;
+  line-height: 1.3;
   margin-bottom: 24px;
   text-align: center;
   letter-spacing: -0.5px;
@@ -109,7 +110,7 @@ header h1 {
   font-family: var(--font-primary);
   font-size: 16px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.56;
   color: var(--clr-black);
   text-align: center;
 }
@@ -122,6 +123,7 @@ header h1 {
   order: 2;
 }
 
+/* ============================= <!-- Menu Section --> ============================ */
 .menu-section {
   width: 100%;
   background-color: var(--clr-bg-soft-coffee);
@@ -194,7 +196,7 @@ header h1 {
   font-family: var(--font-primary);
   font-size: 20px;
   font-weight: 700;
-  color: #BF662F;
+  color: var(--base-color);
   cursor: pointer;
   position: relative;
   transition: color 0.3s ease;
@@ -220,14 +222,14 @@ header h1 {
 }
 
 .tab:focus-visible {
-  outline: 3px solid var(--clr-secondary, #C67C4E);
+  outline: 3px solid var(--clr-secondary, --clr-primary);
   outline-offset: 4px;
 }
 
 .menu-left-image {
   flex: 0 0 350px;
   background-color: transparent;
-  border: 1px solid #BF662F;
+  border: 1px solid var(--base-color);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -250,13 +252,13 @@ header h1 {
   font-weight: 400;
   color: var(--clr-black);
   padding-right: 6px;
-  line-height: 35px;
+  line-height: 1.4;
 }
 
 .menu-content-wrapper {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 80px;
   width: 100%;
 }
@@ -273,18 +275,18 @@ header h1 {
 .menu-item {
   display: flex;
   align-items: flex-end;
-  width: 100%; 
+  width: 100%;
 }
 
 .dots {
-  flex: 1; 
+  flex: 1;
   border-bottom: 2px dotted var(--clr-black);
   margin-inline: 12px;
   position: relative;
   font-size: 25px;
   font-weight: 400;
-  line-height: 35px;
-  top: -6px; 
+  line-height: 1.4;
+  top: -6px;
 }
 
 .item-price {
@@ -308,6 +310,8 @@ header h1 {
   visibility: hidden;
 }
 
+/* =============================  <!-- BellaCrema Section --> ========================= */
+
 .coffee-ads-section {
   display: flex;
   justify-content: center;
@@ -320,7 +324,7 @@ header h1 {
   justify-content: center;
   max-width: 1200px;
   background-image: url("/assets/img/menu/coffee-bg-pattern.png");
-  border: 1px solid #8A5B4C;
+  border: 1px solid var(--dark-coffee);
   border-radius: 20px;
   padding: 40px;
   margin: 150px;
@@ -335,17 +339,17 @@ header h1 {
 .card-header h2 {
   font-size: 60px;
   font-weight: 700;
-  color: #8A5B4C;
+  color: var(--dark-coffee);
   font-family: var(--font-primary);
-  line-height: 65px;
+  line-height: 1.08;
 }
 
 .card-header h3 {
   font-size: 35px;
   font-weight: 700;
-  color: #C67C4E;
+  color: var(--clr-light-coffee);
   font-family: var(--font-primary);
-  line-height: 45px;
+  line-height: 1.28;
 }
 
 .card-description {
@@ -354,7 +358,7 @@ header h1 {
   color: var(--clr-black);
   font-family: var(--font-primary);
   margin: 0;
-  line-height: 40px;
+  line-height: 1.3;
   text-align: right;
   padding-top: 20px;
 }
@@ -370,6 +374,8 @@ header h1 {
   visibility: hidden;
 }
 
+/* ================================= RESPONSIVE =================================== */
+/* <!-- Today Special Section --> */
 /* Laptop */
 @media screen and (max-width: 1200px) {
 
@@ -389,17 +395,16 @@ header h1 {
 
   .card-header h2 {
     font-size: 50px;
-    line-height: 55px;
+    line-height: 1.1;
   }
 
   .card-description {
     font-size: 24px;
-    line-height: 34px;
+    line-height: 1.4;
   }
 }
 
 @media screen and (max-width: 992px) {
-
   .menu-sec-wrap,
   .menu-wrap {
     width: 92%;
@@ -427,9 +432,9 @@ header h1 {
   }
 
   .menu-content-wrapper {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    gap: 40px; 
+    gap: 40px;
   }
 
   #panel-drinks {
@@ -442,14 +447,14 @@ header h1 {
   }
 
   .menu-list {
-    width: 100%; 
+    width: 100%;
   }
 
   .item-name,
   .item-price {
     font-size: 22px;
   }
-  
+
   .card {
     /*flex-direction: column;*/
     text-align: center;
@@ -476,17 +481,17 @@ header h1 {
 
   .card-header h2 {
     font-size: 48px;
-    line-height: 52px;
+    line-height: 1.08;
   }
 
   .card-header h3 {
     font-size: 30px;
-    line-height: 38px;
+    line-height: 1.26;
   }
 
   .card-description {
     font-size: 22px;
-    line-height: 32px;
+    line-height: 1.45;
   }
 }
 
@@ -522,18 +527,18 @@ header h1 {
 
   .sec-top .card-ttl {
     font-size: 28px;
-    line-height: 36px;
+    line-height: 1.28;
   }
 
   .sec-top .card-desc {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 1.6;
   }
 
   .item-name,
   .item-price {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.56;
   }
 
   .menu-list {
@@ -553,15 +558,15 @@ header h1 {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}
+  }
 
   .card-image {
-    float: left;                 
-    width: 35%;          
+    float: left;
+    width: 35%;
     max-width: 120px;
-    margin-top: 0;         
+    margin-top: 0;
     margin-bottom: 10px;
-    margin-right: 15px;  
+    margin-right: 15px;
     opacity: 1;
     visibility: visible;
   }
@@ -573,48 +578,46 @@ header h1 {
   }
 
   .text-wrapper {
-    display: block; 
-    width: 100%; 
+    display: block;
+    width: 100%;
     text-align: left;
     opacity: 1;
     visibility: visible;
   }
 
   .card-header {
-    display: block; 
+    display: block;
     text-align: right;
   }
 
   .card-header h2 {
     font-size: 28px;
-    line-height: 32px;
+    line-height: 1.14;
     margin: 0;
-    color: #8A5B4C;
   }
 
   .card-header h3 {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 1.3;
     margin-top: 4px;
     margin-bottom: 0;
-    color: #C67C4E;
   }
 
   .card-description {
     display: block;
-    width: 100%;       
+    width: 100%;
     font-size: 17px;
-    line-height: 20px;
+    line-height: 1.17;
     padding-top: 70px;
     text-align: right;
     margin: 0;
-    clear: none; 
+    clear: none;
   }
-  
+
 }
 
 @media screen and (max-width: 576px) {
-    .sec-top {
+  .sec-top {
     padding-top: 30px;
     padding-bottom: 50px;
   }
@@ -697,13 +700,13 @@ header h1 {
 
   .sec-top .card-ttl {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.25;
     margin-bottom: 16px;
   }
 
   .sec-top .card-desc {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.57;
   }
 
   .menu-section {
@@ -730,10 +733,11 @@ header h1 {
     padding-top: 10px;
     white-space: nowrap;
   }
+
   .menu-content-wrapper {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    gap: 40px; 
+    gap: 40px;
   }
 
   #panel-drinks {
@@ -783,13 +787,13 @@ header h1 {
 
   .item-name,
   .item-price {
-    font-size: 16px; 
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 1.38;
   }
 
   .dots {
-    top: -4px; 
-    margin-inline: 6px; 
+    top: -4px;
+    margin-inline: 6px;
     min-width: 20px;
   }
 

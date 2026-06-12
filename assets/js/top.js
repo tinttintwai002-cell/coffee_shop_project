@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
     window.addEventListener('load', () => {
         ScrollTrigger.refresh();
-    }
-    );
+    });
+
     //Hero
     const tl = gsap.timeline({
         scrollTrigger: {
@@ -102,11 +102,16 @@ document.addEventListener('DOMContentLoaded', () => {
             clickable: true,
         },
         breakpoints: {
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
             // Mobile
             390: {
                 slidesPerView: 1,
                 spaceBetween: 30
             },
+
             // Tablet
             768: {
                 slidesPerView: 1,

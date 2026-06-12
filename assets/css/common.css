@@ -6,7 +6,7 @@
   --clr-primary: #C67C4E;
   --clr-secondary: #313131;
   --base-color: #BF662F;
-  --dark-coffee: color-mix(in srgb, var(--base-color), #000000 60%); 
+  --dark-coffee: color-mix(in srgb, var(--base-color), #000000 60%);
   --clr-black: #000000;
   --clr-white: #FFFFFF;
   --clr-bg-soft-coffee: #f9f2ed;
@@ -171,7 +171,7 @@
   align-items: center;
   padding: 80px;
 
-  
+
 }
 
 .footer-brand {
@@ -490,17 +490,18 @@
     width: 200px;
   }
 }
+
 @media (min-width: 1025px) and (max-width: 1200px) {
   .footer-wrap {
     gap: 80px;
-    
+
   }
 
   .footer-content {
-    max-width: 700px; 
+    max-width: 700px;
   }
 
   .nav-links {
-    gap: 40px; 
+    gap: 40px;
   }
 }

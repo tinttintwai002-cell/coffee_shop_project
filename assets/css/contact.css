@@ -218,7 +218,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
 
 }
 
@@ -562,16 +562,16 @@ a {
 
 .sec-message .form-input:hover,
 .sec-message .form-textarea:hover {
-  border-color: var(--clr-primary); 
-  transform: translateY(-5px);       
+  border-color: var(--clr-primary);
+  transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 
 .sec-message .form-input,
 .sec-message .form-textarea {
-  
-  transition: all 0.3s ease; 
+
+  transition: all 0.3s ease;
 }
 
 /* ==================================== Stay Connected ==================================== */

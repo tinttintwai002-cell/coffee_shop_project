@@ -1,241 +1,269 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu | Coffee Shop</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/top/favicon-logo.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Spectral+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Coffee Shop</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/top/favicon-logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Spectral+SC:wght@600;700&display=swap"
+      rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/common.css" />
-  <link rel="stylesheet" href="assets/css/menu.css" />
-</head>
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+  </head>
 
-<body>
-  <!-- Header -->
-  <header class="header">
-    <nav class="nav">
-      <div class="logo">
-        <a href="top.html">
-          <img src="assets/img/common/img-common-logo.png" alt="Coffee Shop Logo" width="100" height="70">
-        </a>
-      </div>
-      <button class="hamburger" aria-label="Toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <ul class="nav-lists">
-        <li><a href="./top.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><button class="btn-order">Order Now !</button></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!-- Today Special Section -->
-    <section class="sec-top">
-      <div class="menu-sec-wrap">
-        <h2 class="sec-ttl">today special</h2>
-
-        <div class="top-list">
-          <article class="top-card pizza">
-            <div class="card-img-wrap">
-              <img src="assets/img/menu/pizza.png" alt="BBQ Chicken Pizza" width="370" height="370" />
-            </div>
-            <div class="card-content">
-              <h3 class="card-ttl">BBQ Chicken Pizza</h3>
-              <p class="card-desc">
-                A delicious pizza topped with tender grilled chicken, smoky
-                BBQ sauce, melted mozzarella cheese, and fresh onions on a
-                crispy baked crust. Sweet and savory flavors combine to create
-                a rich and satisfying taste in every bite.
-              </p>
-            </div>
-          </article>
-
-          <article class="top-card card-inverted">
-            <div class="card-img-wrap">
-              <img src="assets/img/menu/pizza2.png" alt="Chef's Special Fried Rice" width="370" height="370" />
-            </div>
-            <div class="card-content">
-              <h3 class="card-ttl">Chef’s Special<br />Fried Rice</h3>
-              <p class="card-desc">
-                A flavorful fried rice cooked with fragrant rice, mixed
-                vegetables, tender chicken, shrimp, and savory seasonings.
-                Stir-fried in a hot wok and topped with fresh herbs for a
-                delicious and satisfying dish prepared in the chef’s special
-                style.
-              </p>
-            </div>
-          </article>
-
-          <article class="top-card">
-            <div class="card-img-wrap">
-              <img src="assets/img/menu/pizza3.png" alt="Golden Crispy Chicken Burger" width="370" height="370" />
-            </div>
-            <div class="card-content">
-              <h3 class="card-ttl">Golden Crispy<br />Chicken Burger</h3>
-              <p class="card-desc">
-                A juicy, golden-fried chicken fillet served in a soft toasted
-                bun with fresh lettuce, sliced tomato, and creamy mayonnaise.
-                Crispy on the outside and tender inside, this burger delivers
-                a delicious crunch and rich flavor in every bite.
-              </p>
-            </div>
-          </article>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <a href="top.html">
+            <img src="assets/img/common/img-common-logo.png"
+              alt="Coffee Shop Logo" width="100" height="70">
+          </a>
         </div>
-      </div>
-    </section>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-lists">
+          <li><a href="./top.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./contact.html"><button class="btn-order">Order Now
+                !</button></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Today Special Section -->
+      <section class="sec-top">
+        <div class="menu-sec-wrap">
+          <h2 class="sec-ttl">today special</h2>
 
-    <!-- Menu Section -->
-    <section class="menu-section">
-      <div class="menu-wrap">
-        <div class="menu-title-container">
-          <span class="menu-sub">menu</span>
-          <h2 class="menu-main-title">TASTE OUR FLAVOUR</h2>
-        </div>
-        <div class="menu-tabs">
-          <ul class="menu-tabs" role="tablist" aria-label="Menu Categories">
-            <li role="presentation">
-              <button type="button" class="tab active" role="tab" aria-selected="true" id="tab-drinks" aria-controls="panel-drinks">
-                Drinks
-              </button>
-            </li>
-            <li role="presentation">
-              <button type="button" class="tab" role="tab" aria-selected="false" id="tab-desserts" aria-controls="panel-desserts" tabindex="-1">
-                Desserts
-              </button>
-            </li>
-            <li role="presentation">
-              <button type="button" class="tab" role="tab" aria-selected="false" id="tab-fastfood" aria-controls="panel-fastfood" tabindex="-1">
-                Pizza & Fast Food
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="menu-content-wrapper">
-          <div class="menu-left-image">
-            <img src="assets/img/menu/Rectangle 9.png" alt="Coffee Latte Special" width="350" height="350" />
+          <div class="top-list">
+            <article class="top-card pizza">
+              <div class="card-img-wrap">
+                <img src="assets/img/menu/pizza.png" alt="BBQ Chicken Pizza"
+                  width="370" height="370" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-ttl">BBQ Chicken Pizza</h3>
+                <p class="card-desc">
+                  A delicious pizza topped with tender grilled chicken, smoky
+                  BBQ sauce, melted mozzarella cheese, and fresh onions on a
+                  crispy baked crust. Sweet and savory flavors combine to create
+                  a rich and satisfying taste in every bite.
+                </p>
+              </div>
+            </article>
+
+            <article class="top-card card-inverted">
+              <div class="card-img-wrap">
+                <img src="assets/img/menu/pizza2.png"
+                  alt="Chef's Special Fried Rice" width="370" height="370" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-ttl">Chef’s Special<br />Fried Rice</h3>
+                <p class="card-desc">
+                  A flavorful fried rice cooked with fragrant rice, mixed
+                  vegetables, tender chicken, shrimp, and savory seasonings.
+                  Stir-fried in a hot wok and topped with fresh herbs for a
+                  delicious and satisfying dish prepared in the chef’s special
+                  style.
+                </p>
+              </div>
+            </article>
+
+            <article class="top-card">
+              <div class="card-img-wrap">
+                <img src="assets/img/menu/pizza3.png"
+                  alt="Golden Crispy Chicken Burger" width="370" height="370" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-ttl">Golden Crispy<br />Chicken Burger</h3>
+                <p class="card-desc">
+                  A juicy, golden-fried chicken fillet served in a soft toasted
+                  bun with fresh lettuce, sliced tomato, and creamy mayonnaise.
+                  Crispy on the outside and tender inside, this burger delivers
+                  a delicious crunch and rich flavor in every bite.
+                </p>
+              </div>
+            </article>
           </div>
-          <div id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks">
-            <ul class="menu-list">
-              <li class="menu-item">
-                <span class="item-name">Matcha Latte</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 7500 Myanmar Kyats">7500 MMK</span>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <section class="menu-section">
+        <div class="menu-wrap">
+          <div class="menu-title-container">
+            <span class="menu-sub">menu</span>
+            <h2 class="menu-main-title">TASTE OUR FLAVOUR</h2>
+          </div>
+          <div class="menu-tabs">
+            <ul class="menu-tabs" role="tablist" aria-label="Menu Categories">
+              <li role="presentation">
+                <button type="button" class="tab active" role="tab"
+                  aria-selected="true" id="tab-drinks"
+                  aria-controls="panel-drinks">
+                  Drinks
+                </button>
               </li>
-              <li class="menu-item">
-                <span class="item-name">Hot Americano</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 5500 Myanmar Kyats">5500 MMK</span>
+              <li role="presentation">
+                <button type="button" class="tab" role="tab"
+                  aria-selected="false" id="tab-desserts"
+                  aria-controls="panel-desserts" tabindex="-1">
+                  Desserts
+                </button>
               </li>
-              <li class="menu-item">
-                <span class="item-name">Avogado Yogurt</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 10000 Myanmar Kyats">10000 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Hot Cuppuccino</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 7000 Myanmar Kyats">7000 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Jasmine Green Tea</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 8000 Myanmar Kyats">8000 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Fresh Iced Lemon Tea</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 8000 Myanmar Kyats">8000 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Strawberry Smoothie</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 5500 Myanmar Kyats">5500 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Bang Bang Chocolate</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 6100 Myanmar Kyats">6100 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Mango Tea with QQ Jelly</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 5500 Myanmar Kyats">5500 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Oreo Brown Sugar Milk Tea</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 10800 Myanmar Kyats">10800 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Iced Black Diamond Milk Tea</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 5500 Myanmar Kyats">5500 MMK</span>
-              </li>
-              <li class="menu-item">
-                <span class="item-name">Regular Size Thai Peal Milk Tea</span>
-                <span class="dots" aria-hidden="true"></span>
-                <span class="item-price" aria-label="Price: 9500 Myanmar Kyats">9500 MMK</span>
+              <li role="presentation">
+                <button type="button" class="tab" role="tab"
+                  aria-selected="false" id="tab-fastfood"
+                  aria-controls="panel-fastfood" tabindex="-1">
+                  Pizza & Fast Food
+                </button>
               </li>
             </ul>
           </div>
-        </div>
-
-        <div class="menu-footer-btn">
-          <button type="button" class="btn-order">Order Now...</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- BellaCrema Section -->
-    <section class="coffee-ads-section">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/img/menu/Bella-Crema.png" alt="Bella Crema Espresso" />
-        </div>
-        <div class="card-content">
-          <div class="text-wrapper">
-            <div class="card-header">
-              <h2>BellaCrema</h2>
-              <h3>Expresso</h3>
+          <div class="menu-content-wrapper">
+            <div class="menu-left-image">
+              <img src="assets/img/menu/Rectangle 9.png"
+                alt="Coffee Latte Special" width="350" height="350" />
             </div>
-            <p class="card-description">
-              Savor the rich aroma and bold flavor of our locally roasted
-              coffee. Support local farmers while enjoying every perfect cup.
-            </p>
+            <div id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <span class="item-name">Matcha Latte</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 7500 Myanmar Kyats">7500 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Hot Americano</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 5500 Myanmar Kyats">5500 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Avogado Yogurt</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 10000 Myanmar Kyats">10000 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Hot Cuppuccino</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 7000 Myanmar Kyats">7000 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Jasmine Green Tea</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 8000 Myanmar Kyats">8000 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Fresh Iced Lemon Tea</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 8000 Myanmar Kyats">8000 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Strawberry Smoothie</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 5500 Myanmar Kyats">5500 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Bang Bang Chocolate</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 6100 Myanmar Kyats">6100 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Mango Tea with QQ Jelly</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 5500 Myanmar Kyats">5500 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Oreo Brown Sugar Milk Tea</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 10800 Myanmar Kyats">10800 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Iced Black Diamond Milk Tea</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 5500 Myanmar Kyats">5500 MMK</span>
+                </li>
+                <li class="menu-item">
+                  <span class="item-name">Regular Size Thai Peal Milk Tea</span>
+                  <span class="dots" aria-hidden="true"></span>
+                  <span class="item-price"
+                    aria-label="Price: 9500 Myanmar Kyats">9500 MMK</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="menu-footer-btn">
+            <button type="button" class="btn-order">Order Now...</button>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  
-  <!-- Footer -->
-  <footer class="footer" data-anim="fade-up" delay="100">
-    <div class="footer-wrap">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <img src="assets/img/contact/img-Contentfooter-logo.png" alt="Coffee Shop Logo">
+      </section>
+
+      <!-- BellaCrema Section -->
+      <section class="coffee-ads-section">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/img/menu/Bella-Crema.png"
+              alt="Bella Crema Espresso" />
+          </div>
+          <div class="card-content">
+            <div class="text-wrapper">
+              <div class="card-header">
+                <h2>BellaCrema</h2>
+                <h3>Expresso</h3>
+              </div>
+              <p class="card-description">
+                Savor the rich aroma and bold flavor of our locally roasted
+                coffee. Support local farmers while enjoying every perfect cup.
+              </p>
+            </div>
+          </div>
         </div>
-        <p class="footer-slogan">TASTE OUR FLAVOUR</p>
-      </div>
-      <div class="footer-content">
-        <div class="footer-nav">
-          <ul class="nav-links">
-            <li><a href="./top.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-anim="fade-up" delay="100">
+      <div class="footer-wrap">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/img/contact/img-Contentfooter-logo.png"
+              alt="Coffee Shop Logo">
+          </div>
+          <p class="footer-slogan">TASTE OUR FLAVOUR</p>
         </div>
-        <hr class="footer-divider">
+        <div class="footer-content">
+          <div class="footer-nav">
+            <ul class="nav-links">
+              <li><a href="./top.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <hr class="footer-divider">
 
           <div class="footer-actions-row">
             <form class="footer-newsletter" onsubmit="event.preventDefault();">
@@ -268,10 +296,12 @@
         <p>Copyright@2026 All Rights Reserved</p>
       </div>
     </footer>
-    
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="assets/js/menu.js"></script>
-  <script src="assets/js/common.js"></script>
-</body>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/common.js"></script>
+  </body>
 </html>

@@ -14,16 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
             navLists.classList.remove('active');
         });
     });
-    
-    // လက်ရှိ URL ကိုယူပြီး စစ်ဆေးခြင်း
-const currentLocation = location.href;
-const menuItem = document.querySelectorAll('.nav-lists li a');
 
-menuItem.forEach((item) => {
-  if (item.href === currentLocation) {
-    item.classList.add('active');
-  }
-});
+    // လက်ရှိ URL ကိုယူပြီး စစ်ဆေးခြင်း
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('.nav-lists li a');
+
+    menuItem.forEach((item) => {
+        if (item.href === currentLocation) {
+            item.classList.add('active');
+        }
+    });
     const header = document.querySelector(".header");
 
     if (header) {

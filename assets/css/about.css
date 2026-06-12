@@ -22,7 +22,7 @@
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-    transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform, opacity;
 }
 
@@ -30,6 +30,7 @@
   opacity: 1;
   transform: translateY(0);
 }
+
 /* Chef-List Section */
 .sec-chef {
   padding: 80px 10px;
@@ -117,9 +118,10 @@
   aspect-ratio: 1 / 1;
   transition: transform 0.5s ease;
 }
+
 .sec-chef .chef-card:hover .chef-img {
   transform: scale(1.05);
-   opacity: 0.7;
+  opacity: 0.7;
 }
 
 .sec-chef .chef-name {
@@ -139,6 +141,7 @@
   text-align: center;
   font-weight: 400;
 }
+
 /* Our History Section */
 .sec-history {
   position: relative;
@@ -249,6 +252,7 @@
   opacity: 1;
   transform: translateY(0);
 }
+
 /* Mobile View */
 @media(max-width: 768px) {
 
@@ -270,7 +274,7 @@
     border: none;
   }
 
-/* Chef List Section */
+  /* Chef List Section */
   .sec-ttl::before,
   .sec-ttl::after {
     content: "";
@@ -311,7 +315,8 @@
   .sec-chef .chef-role {
     font-size: 16px;
   }
-/* Our History Section */
+
+  /* Our History Section */
   .sec-history .history-timeline::before {
     display: none;
   }
@@ -364,8 +369,9 @@
 
 
 }
+
 /* Responsive between Mobile View and Tablet View */
-@media (min-width: 577px) and (max-width: 1023px) {
+@media (min-width: 577px) and (max-width: 1024px) {
 
   .sec-history .history-timeline::before {
     display: none;
@@ -380,6 +386,7 @@
     margin-bottom: 45px;
     border-left: 2px solid var(--clr-secondary);
     align-self: flex-start;
+    margin-left: 30px;
   }
 
   .sec-history .item-left,
@@ -399,5 +406,38 @@
 
   .sec-history .timeline-desc {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .sec-history .sec-ttl {
+    margin-bottom: 60px;
+  }
+
+
+  .sec-history .timeline-item {
+    max-width: 500px;
+  }
+
+  .sec-history .item-left {
+    padding: 5px 20px;
+  }
+
+  .sec-history .item-right {
+    padding: 5px 20px;
+  }
+
+  .sec-history .timeline-year {
+    font-size: 30px;
+  }
+
+  .sec-history .timeline-sub-ttl {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .sec-history .timeline-desc {
+    font-size: 14px;
   }
 }
